@@ -7,7 +7,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 CORS(app)
 
-# ---------------- DATABASE CONFIG ----------------
+# ---------------- DATABASE CONFIG ----------
 db_config = {
     "host": "free-mysql.cfcqg0gwg8n1.us-west-2.rds.amazonaws.com",
     "user": "admin",
@@ -116,6 +116,7 @@ def get_users():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
     
+
 
 
 
